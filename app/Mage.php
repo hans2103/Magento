@@ -53,6 +53,9 @@ if (defined('COMPILER_INCLUDE_PATH')) {
 
 Varien_Autoload::register();
 
+include_once "phpseclib/bootstrap.php";
+include_once "mcrypt_compat/mcrypt.php";
+
 /**
  * Main Mage hub class
  *
@@ -171,7 +174,7 @@ final class Mage
             'major'     => '1',
             'minor'     => '9',
             'revision'  => '3',
-            'patch'     => '9',
+            'patch'     => '10',
             'stability' => '',
             'number'    => '',
         );
