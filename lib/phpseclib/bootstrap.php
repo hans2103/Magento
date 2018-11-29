@@ -4,7 +4,6 @@
  *
  * @license http://www.opensource.org/licenses/mit-license.html MIT License
  */
-
 if (extension_loaded('mbstring')) {
     // 2 - MB_OVERLOAD_STRING
     if (ini_get('mbstring.func_overload') & 2) {
@@ -16,9 +15,8 @@ if (extension_loaded('mbstring')) {
 }
 
 spl_autoload_register(function($className) {
-    $parts = explode('\\', $className);
-
-    if (array_shift($parts) == 'phpseclib') {
+    $path = explode('\\', $className);
+    if (array_shift($path) == 'phpseclib') {
         return include str_replace('\\', DIRECTORY_SEPARATOR, $className) . '.php';
     }
 });
