@@ -1,6 +1,16 @@
 {
-    "name": "hans2103/magento",
-    "type": "magento-core",
-    "license": ["OSL-3.0", "AFL-3.0"],
-    "description": "Magento CE"
+  "name": "hans2103/magento",
+  "license": "OSL-3.0",
+  "type": "magento-core",
+  "require": {
+    "php": ">=5.6 <7.3",
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "Hans Kuijpers",
+      "email": "hans2103@gmail.com",
+      "role": "Maintainer"
+    }
+  ]
 }
